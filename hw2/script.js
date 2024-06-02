@@ -9,11 +9,12 @@ dropdownEl.forEach(element => {
 // []()
 // 2. У элемента с классом btn необходимо убрать класс "btn-secondary", если он присутствует у этого элемента, либо добавить, если такого класса у элемента не было.
 const btnEl = document.querySelector('.btn');
-if (btnEl.classList.contains('btn-secondary')) {
-    btnEl.classList.remove('btn-secondary');
-  } else {
-    btnEl.classList.add('btn-secondary');
-  }
+// if (btnEl.classList.contains('btn-secondary')) {
+//     btnEl.classList.remove('btn-secondary');
+//   } else {
+//     btnEl.classList.add('btn-secondary');
+//   }
+btnEl.classList.toggle('btn-secondary');
 // []()
 // 3. Необходимо удалить класс "dropdown-menu" у элемента, у которого присутствует класс "menu".
 const menuEl = document.querySelectorAll('.menu');
@@ -26,8 +27,9 @@ menuEl.forEach(element => {
 // []()
 // 4. Используя метод insertAdjacentHTML добавьте после div'a с классом "dropdown" следующую разметку:
 // `<a href="#">link</a>`
-const ddownEl = document.querySelector('.dropdown');
-ddownEl.insertAdjacentHTML('beforeend', `<a href="#">link</a>`);
+const ddownEl = document.querySelector('div.dropdown');
+console.log(ddownEl);
+ddownEl.insertAdjacentHTML('afterbegin', `<a href="#">link</a>`);
 // []()
 // 5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
 const ddmbEl = document.querySelector('#dropdownMenuButton');
