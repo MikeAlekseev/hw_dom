@@ -28,8 +28,8 @@ menuEl.forEach(element => {
 // 4. Используя метод insertAdjacentHTML добавьте после div'a с классом "dropdown" следующую разметку:
 // `<a href="#">link</a>`
 const ddownEl = document.querySelector('div.dropdown');
-console.log(ddownEl);
-ddownEl.insertAdjacentHTML('afterbegin', `<a href="#">link</a>`);
+// console.log(ddownEl);
+ddownEl.insertAdjacentHTML('afterend', `<a href="#">link</a>`);
 // []()
 // 5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
 const ddmbEl = document.querySelector('#dropdownMenuButton');
